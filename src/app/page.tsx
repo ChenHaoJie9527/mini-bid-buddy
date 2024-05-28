@@ -3,7 +3,7 @@ import { bids as bidShema } from "@/db/schema";
 export default async function Home() {
   const bids = await database.query.bids.findMany();
   return (
-    <main className="">
+    <main className="w-full">
       <form
         action={async (formData: FormData) => {
           "use server";
